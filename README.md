@@ -4,4 +4,4 @@ Weather Forecast, my first React App, implemented utilizing some sort of handy l
   - Remote state management: React Query
   - Router: React Router Dom
   - CSS Supporter: Tailwind CSS
-# It's still under maintenance stage, UI hasn't been responsive for mobile and tablet devices. I have not concerned 'bout performance related issue, but soon updated it to a fresh one.
+It's still under maintenance stage, UI hasn't been responsive for mobile and tablet devices. I have not concerned 'bout performance related issue, but soon updated it to a fresh one.
