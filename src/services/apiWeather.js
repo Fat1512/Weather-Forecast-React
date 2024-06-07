@@ -2,7 +2,6 @@ import { API_KEY } from '../utils/constant';
 export let controller;
 export async function getGeoCountry({ country }) {
   controller = new AbortController();
-  console.log(controller);
   const res = await fetch(
     `http://api.openweathermap.org/geo/1.0/direct?q=${country}&limit=5&appid=${API_KEY}`,
     { signal: controller.signal },

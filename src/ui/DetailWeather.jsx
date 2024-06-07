@@ -1,3 +1,8 @@
+import { WiCelsius, WiHumidity } from 'react-icons/wi';
+import { MdOutlineVisibility, MdOutlineWaves } from 'react-icons/md';
+import { FaThermometerHalf } from 'react-icons/fa';
+import { getTimeBasedOnTimestamp } from '../utils/helper';
+
 import Box from './Box';
 import Heading from './Heading';
 import Highlight from '../features/Hightlight/Hightlight';
@@ -5,13 +10,9 @@ import HightlightBox from '../features/Hightlight/HightlightBox';
 import HighlightItem from '../features/Hightlight/HighlightItem';
 import AirQuality from '../features/Hightlight/AirQuality';
 import SunDetails from '../features/Hightlight/SunDetails';
-import { WiCelsius, WiHumidity } from 'react-icons/wi';
-import { MdOutlineVisibility, MdOutlineWaves } from 'react-icons/md';
-import { FaThermometerHalf } from 'react-icons/fa';
 import TodayDetails from '../features/Today/TodayDetails';
 import Row from './Row';
 import useCurrentWeather from '../hooks/useCurrentWeather';
-import { getTimeBasedOnTimestamp } from '../utils/helper';
 
 function DetailWeather() {
   const { currentWeather, isLoading } = useCurrentWeather();

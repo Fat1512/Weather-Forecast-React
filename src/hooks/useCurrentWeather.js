@@ -6,7 +6,6 @@ function useCurrentWeather() {
   const [searchParams, setSearchParams] = useSearchParams();
   const lat = searchParams.get('lat');
   const lon = searchParams.get('lon');
-  const queryClient = useQueryClient();
   const {
     isLoading,
     data: currentWeather,

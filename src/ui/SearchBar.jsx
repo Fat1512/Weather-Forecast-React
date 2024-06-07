@@ -23,9 +23,6 @@ function SearchBar() {
           },
         },
       );
-      return function () {
-        // controller.abort();
-      };
     },
     [query],
   );

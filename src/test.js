@@ -3,7 +3,7 @@ const query = 'new york';
 
 const API_FORECAST = `https://api.openweathermap.org/data/2.5/forecast?lat=40.3843304&lon=-75.4203885&units=metric&appid=ff8a11c6adb23e69012266900523c85a`;
 const API_GEOCODING = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`;
-const API_REVERSE_GEOCODING = `http://api.openweathermap.org/geo/1.0/reverse?lat=23.7644025&lon=90.389015&limit=5&appid=${API_KEY}`;
+const API_REVERSE_GEOCODING = `http://api.openweathermap.org/geo/1.0/reverse?lat=21.0294498&lon=105.8544441&limit=5&appid=${API_KEY}`;
 const API_WEATHER = `https://api.openweathermap.org/data/2.5/weather?lat=${10.8033079}&lon=${106.6409201}&appid=ff8a11c6adb23e69012266900523c85a`;
 const API_WEATHER_COUNTRY = `https://api.openweathermap.org/data/2.5/weather?q=${query}&limit=5&appid=ff8a11c6adb23e69012266900523c85a`;
 const API_MAIN = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=ff8a11c6adb23e69012266900523c85a`;
@@ -20,11 +20,14 @@ async function f() {
   const res4 = await fetch(API_REVERSE_GEOCODING);
   const data = await res.json();
   const data1 = await res1.json();
+  const data3 = await res3.json();
+  const data4 = await res4.json();
   // const data2 = await res2.json();
-  // const data3 = await res3.json();
-  // const data4 = await res4.json();
-  console.log(data);
-  console.log(data1);
+  // console.log(data);
+  // console.log(data1);
+  // console.log(data3);
+  // console.log(data4);
+
   // const { list } = data;
   // let options = {
   //   weekday: 'long',
