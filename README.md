@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Weather React App
+Implemented using some sort of handy libraries for state management and Tailwind CSS to facilitate scaffolding process:
+# Supporting library:
+  - Remote state management: React Query
+  - Router: React Router Dom
+  - CSS Supporter: Tailwind CSS
+# Disclaimer
+It's still under maintenance stage, UI hasn't yet been made responsive for mobile and tablet devices. performance related issues have not been addressed yet, but an update would be released soon
