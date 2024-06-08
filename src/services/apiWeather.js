@@ -1,5 +1,6 @@
 import { API_KEY } from '../utils/constant';
 export let controller;
+
 export async function getGeoCountry({ country }) {
   controller = new AbortController();
   const res = await fetch(

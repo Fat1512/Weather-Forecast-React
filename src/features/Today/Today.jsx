@@ -23,6 +23,7 @@ function Today() {
             <WiCelsius />
           </span>
           <img
+            className="h-50"
             src={`../../public/images/weather_icons/${weather[0].icon}.png`}
             alt=""
           />

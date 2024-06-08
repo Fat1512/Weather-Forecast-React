@@ -16,7 +16,6 @@ import useCurrentWeather from '../hooks/useCurrentWeather';
 
 function DetailWeather() {
   const { currentWeather, isLoading } = useCurrentWeather();
-  if (isLoading) return;
 
   const humidity = currentWeather.main.humidity;
   const pressure = currentWeather.main.pressure;

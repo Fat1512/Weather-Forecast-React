@@ -3,12 +3,12 @@ import Row from './Row';
 import RowCol from './RowCol';
 import { useSearchParams } from 'react-router-dom';
 
-function SearchItem({ country }) {
+function SearchItem({ country, setQuery }) {
   const [searchParams, setSearchParams] = useSearchParams();
   function handleChangeLocation() {
-    console.log('clicked');
     searchParams.set('lat', country.lat);
     searchParams.set('lon', country.lon);
+    setQuery('');
     setSearchParams(searchParams);
   }
   return (

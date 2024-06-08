@@ -3,12 +3,14 @@ import { FaSearch } from 'react-icons/fa';
 import SearchList from './SearchList';
 import useSearchWeather from '../hooks/useSearchWeather';
 import { controller } from '../services/apiWeather';
+import SearchItem from './SearchItem';
+import MiniSpinner from './MiniSpinner';
 
 function SearchBar() {
   const [query, setQuery] = useState();
   const [listCountry, setListCountry] = useState();
 
-  const { getSearchWeather, error } = useSearchWeather();
+  const { getSearchWeather, error, status } = useSearchWeather();
   useEffect(
     function () {
       if (!query) {
@@ -36,10 +38,24 @@ function SearchBar() {
         placeholder="Search City"
         onChange={(e) => setQuery(() => e.target.value)}
         type="text"
-        className="w-[400px] rounded-full bg-gray-900 p-3 pl-10 focus:rounded-b-none focus:rounded-t-3xl focus:border-b focus:outline-none"
+        value={query}
+        className="w-[400px] rounded-full bg-gray-900 p-3 pl-10 focus:outline-none"
       />
+      {status === 'loading' && (
+        <span className="absolute right-4 top-1/2 flex origin-left translate-y-[-50%] items-center">
+          <MiniSpinner />
+        </span>
+      )}
       {listCountry && listCountry.length !== 0 && (
-        <SearchList list={listCountry} />
+        <SearchList>
+          {listCountry.map((country) => (
+            <SearchItem
+              setQuery={setQuery}
+              key={country.lat}
+              country={country}
+            />
+          ))}
+        </SearchList>
       )}
     </form>
   );

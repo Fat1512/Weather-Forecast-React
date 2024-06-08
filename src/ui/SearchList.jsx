@@ -1,11 +1,9 @@
 import SearchItem from './SearchItem';
 
-function SearchList({ list }) {
+function SearchList({ children }) {
   return (
-    <ul className="absolute top-full z-50 w-full rounded-b-3xl bg-gray-900">
-      {list.map((country) => (
-        <SearchItem key={country.lat} country={country} />
-      ))}
+    <ul className="absolute top-[105%] z-50 w-full rounded-xl bg-gray-900">
+      {children}
     </ul>
   );
 }
