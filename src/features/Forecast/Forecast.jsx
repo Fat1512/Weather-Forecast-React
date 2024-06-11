@@ -1,8 +1,7 @@
-import useCurrentWeather from '../../hooks/useCurrentWeather';
 import useForecastWeather from '../../hooks/useForecastWeather';
 import Box from '../../ui/Box';
 import Heading from '../../ui/Heading';
-import { getFullDate, getMonthDay, getWeekDay } from '../../utils/helper';
+import { getMonthDay, getWeekDay } from '../../utils/helper';
 import ForecastRow from './ForecastRow';
 
 function Forecast() {

@@ -3,14 +3,16 @@ import useForecastWeather from '../../hooks/useForecastWeather';
 import Row from '../../ui/Row';
 import { getTimeBasedOnDatetime } from '../../utils/helper';
 import TodayDetailItem from './TodayDetailItem';
+import Heading from '../../ui/Heading';
 
 function TodayDetails() {
   const { forecastWeather, isLoading } = useForecastWeather();
   if (isLoading) return;
   const listForecast = forecastWeather.list.slice(0, 8);
   return (
-    <>
-      <Row style="flex-wrap gap-1 justify">
+    <div>
+      <Heading>Today at</Heading>
+      <div className="grid-rows-auto grid grid-cols-8 gap-4">
         {listForecast.map((el) => (
           <TodayDetailItem
             key={el.dt_txt}
@@ -30,8 +32,8 @@ function TodayDetails() {
             icon="direction"
           />
         ))}
-      </Row>
-    </>
+      </div>
+    </div>
   );
 }
 
