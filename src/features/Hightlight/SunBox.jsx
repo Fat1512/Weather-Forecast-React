@@ -7,7 +7,7 @@ function SunBox() {
   const { currentWeather, isLoading } = useCurrentWeather();
   return (
     <HightlightBox
-      style="gap-2 col-[3_/_5] row-[1_/_2]"
+      style="gap-2 max-lg:col-[1_/_-1] col-[3_/_5]"
       title="Sunrise & Sunset"
     >
       <SunDetails

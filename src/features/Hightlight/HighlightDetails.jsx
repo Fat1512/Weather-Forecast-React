@@ -7,7 +7,7 @@ function HighlightDetails() {
   return (
     <div className="rounded-2xl bg-gray-900 p-4">
       <Heading>Todays Highlights</Heading>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-4 grid-rows-[auto] gap-2 max-lg:grid-cols-2">
         <AirQualityBox />
         <SunBox />
         <ConditionBox />

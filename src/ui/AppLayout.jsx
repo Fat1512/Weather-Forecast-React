@@ -1,9 +1,6 @@
-import { useQueryClient } from '@tanstack/react-query';
 import DetailWeather from './DetailWeather';
 import Header from './Header';
 import SideBar from './SideBar';
-import { useNavigation } from 'react-router-dom';
-import useCurrentWeather from '../hooks/useCurrentWeather';
 import Body from './Body';
 
 function AppLayout() {

@@ -14,13 +14,12 @@ function Forecast() {
   return (
     <>
       <Heading>5 Days Forecast</Heading>
-      <Box>
+      <Box style="mb-5">
         {listForecast.map((el) => (
           <ForecastRow
             key={el.dt}
             weatherImg={el.weather[0].icon}
             temperature={Math.round(el.main.temp)}
-            // weekday={new Date(el.dt_txt).getUTCDate()}
             weekday={getWeekDay(el.dt_txt)}
             date={getMonthDay(el.dt_txt)}
           />

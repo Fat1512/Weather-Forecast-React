@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 
 function Header() {
   return (
-    <header className="col-[1_/_-1] row-[1_/_2] flex  items-center justify-between px-10 py-8">
+    <header className="col-[1_/_-1] row-[1_/_2] flex items-center justify-between px-10 py-8">
       <Logo />
       <SearchBar />
       <CurrentLocation />

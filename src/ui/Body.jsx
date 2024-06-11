@@ -6,7 +6,11 @@ function Body({ children }) {
   if (isLoading) {
     return <Spinner />;
   }
-  return <main className="grid grid-cols-2">{children}</main>;
+  return (
+    <main className="grid max-xl:grid-cols-[auto_1fr] max-lg:grid-cols-1">
+      {children}
+    </main>
+  );
 }
 
 export default Body;

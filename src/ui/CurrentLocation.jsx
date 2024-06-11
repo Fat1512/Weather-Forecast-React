@@ -25,7 +25,7 @@ function CurrentLocation() {
       <span className=" text-sm ">
         <TbCurrentLocation />
       </span>
-      <button className="block px-3 ">Current Location</button>
+      <button className="block px-3 max-lg:hidden">Current Location</button>
     </div>
   );
 }
