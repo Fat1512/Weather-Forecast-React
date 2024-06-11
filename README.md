@@ -9,3 +9,4 @@ Implemented using some sort of handy libraries for state management and Tailwind
   - Reference: https://openweathermap.org/api
 # Disclaimer
 It's still under maintenance stage, UI hasn't yet been made responsive for mobile and tablet devices. performance related issues have not been addressed yet, but an update would be released soon
+* Just few weeks after uploading this side project, I realize that there were component division mistakes caused by not carefully analyzing the layout though it was sooo ez tho.
