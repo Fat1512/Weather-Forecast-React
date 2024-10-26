@@ -1,6 +1,6 @@
 # Weather React App
 Implemented using some sort of handy libraries for state management and Tailwind CSS to facilitate scaffolding process:
-# Supporting library:
+# Library:
   - Remote State Management: React Query
   - Router: React Router Dom
   - CSS: Tailwind CSS
